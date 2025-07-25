@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smulaapje Stijlgids</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --primary: #F97316;
+      --primary-dark: #ea580c;
+      --secondary: #10B981;
+      --accent: #FBBF24;
+      --bg-light: #F9FAFB;
+      --text-dark: #1F2937;
+      --error: #EF4444;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      padding: 2rem;
+    }
+
+    .btn {
+      background-color: var(--primary);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.2s ease;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background-color: var(--primary-dark);
+    }
+
+    .color-box {
+      width: 100px;
+      height: 100px;
+      border-radius: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="text-4xl font-bold mb-4">Smulaapje stijlgids</h1>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-2">🎨 Kleuren</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+      <div>
+        <div class="color-box" style="background: var(--primary);"></div>
+        <p>Primary: <code>#F97316</code></p>
+      </div>
+      <div>
+        <div class="color-box" style="background: var(--secondary);"></div>
+        <p>Secondary: <code>#10B981</code></p>
+      </div>
+      <div>
+        <div class="color-box" style="background: var(--accent);"></div>
+        <p>Accent: <code>#FBBF24</code></p>
+      </div>
+      <div>
+        <div class="color-box" style="background: var(--bg-light); border: 1px solid #ccc;"></div>
+        <p>Achtergrond: <code>#F9FAFB</code></p>
+      </div>
+      <div>
+        <div class="color-box" style="background: var(--text-dark);"></div>
+        <p>Tekst: <code>#1F2937</code></p>
+      </div>
+      <div>
+        <div class="color-box" style="background: var(--error);"></div>
+        <p>Error: <code>#EF4444</code></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-2">🔤 Typografie</h2>
+    <p class="text-sm">Kleine tekst</p>
+    <p class="text-base">Standaard tekst</p>
+    <p class="text-lg font-medium">Grote tekst</p>
+    <p class="text-2xl font-bold">Koptekst</p>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-2">🔘 Knoppen</h2>
+    <a href="#" class="btn">Standaard knop</a>
+  </section>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold mb-2">📷 Afbeeldingsstijl</h2>
+    <img src="images/reallife/Dad and daughter cooking.jpeg" alt="Voorbeeldafbeelding" class="rounded-xl shadow-md w-full max-w-md" />
+  </section>
+</body>
+</html>
