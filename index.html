@@ -10,17 +10,51 @@
 
     <!-- Je eigen stijlen -->
     <link rel="stylesheet" href="css/style.css" />
+
+
+      /* Custom Tailwind-achtige klassen */
+      .bg-primary {
+        background-color: var(--color-primary);
+      }
+      .text-primary {
+        color: var(--color-primary);
+      }
+      .bg-secondary {
+        background-color: var(--color-secondary);
+      }
+      .text-accent {
+        color: var(--color-accent);
+      }
+      .text-brown {
+        color: var(--color-brown);
+      }
+      .bg-brown {
+        background-color: var(--color-brown);
+      }
+      .bg-lightbrown {
+        background-color: var(--color-lightbrown);
+      }
+      .btn {
+        @apply inline-block px-6 py-3 rounded font-semibold text-white;
+        background-color: var(--color-primary);
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+      }
+      .btn:hover {
+        background-color: #0099cc; /* iets donkerder blauw */
+      }
+    </style>
   </head>
 
-  <body class="bg-white text-gray-900 font-sans">
+  <body class="bg-secondary text-brown font-sans">
     <!-- Hero Section -->
     <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
       <img src="logo.png" alt="Smulaapje logo" class="h-20 mb-4" />
-      <h1 class="text-3xl md:text-5xl font-bold mb-6">Samen koken wordt kinderspel</h1>
+      <h1 class="text-3xl md:text-5xl font-bold mb-6 text-primary">Samen koken wordt kinderspel</h1>
       <img
         src="images/reallife/dad-and-daughter-cooking.jpg"
         alt="Vader en dochter koken"
-        class="shadow-md w-full max-w-2xl mb-8"
+        class="shadow-md w-full max-w-2xl mb-8 rounded"
       />
       <a
         href="mailto:marennehoogenboom@hotmail.com"
@@ -31,19 +65,19 @@
     </section>
 
     <!-- Drie Stappen -->
-    <section class="py-16 px-6 bg-gray-50 text-center">
-      <h2 class="text-2xl font-bold mb-12">Zo werkt het</h2>
+    <section class="py-16 px-6 bg-white text-center">
+      <h2 class="text-2xl font-bold mb-12 text-brown">Zo werkt het</h2>
       <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-8 text-left">
         <div>
-          <h3 class="text-xl font-semibold mb-2">1. Kies een recept</h3>
+          <h3 class="text-xl font-semibold mb-2 text-primary">1. Kies een recept</h3>
           <p>Elke week een nieuw, kindvriendelijk gerecht met een vrolijke mascotte.</p>
         </div>
         <div>
-          <h3 class="text-xl font-semibold mb-2">2. Kook samen</h3>
+          <h3 class="text-xl font-semibold mb-2 text-primary">2. Kook samen</h3>
           <p>Jouw kind wordt chef: recepten zijn speciaal gemaakt voor kinderen van 4–7.</p>
         </div>
         <div>
-          <h3 class="text-xl font-semibold mb-2">3. Smullen maar!</h3>
+          <h3 class="text-xl font-semibold mb-2 text-primary">3. Smullen maar!</h3>
           <p>Meer groenten, minder gezeur — koken wordt een feestje voor het hele gezin.</p>
         </div>
       </div>
