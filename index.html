@@ -2,7 +2,7 @@
 <html lang="nl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Smulaapje</title>
 
     <!-- Tailwind via CDN -->
@@ -11,8 +11,17 @@
     <!-- Je eigen stijlen -->
     <link rel="stylesheet" href="css/style.css" />
 
+    <!-- Styleguide kleuren & custom klassen -->
+    <style>
+      :root {
+        --color-primary: #00CFFF;     /* Blauw - SMULAAPJE */
+        --color-secondary: #FFF379;   /* Geel - achtergrond */
+        --color-accent: #FF4C4C;      /* Rood - subtitel */
+        --color-brown: #693A1C;       /* Donkerbruin - aap */
+        --color-lightbrown: #F3B773;  /* Lichtbruin - gezicht */
+        --color-white: #FFFFFF;
+      }
 
-      /* Custom Tailwind-achtige klassen */
       .bg-primary {
         background-color: var(--color-primary);
       }
@@ -35,10 +44,14 @@
         background-color: var(--color-lightbrown);
       }
       .btn {
-        @apply inline-block px-6 py-3 rounded font-semibold text-white;
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.375rem;
+        font-weight: 600;
+        color: var(--color-white);
         background-color: var(--color-primary);
-        transition: background-color 0.3s ease;
         text-decoration: none;
+        transition: background-color 0.3s ease;
       }
       .btn:hover {
         background-color: #0099cc; /* iets donkerder blauw */
