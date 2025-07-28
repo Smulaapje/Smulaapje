@@ -14,11 +14,11 @@
     <!-- Styleguide kleuren & custom klassen -->
     <style>
       :root {
-        --color-primary: #00CFFF;     /* Blauw - SMULAAPJE */
-        --color-secondary: #FFF379;   /* Geel - achtergrond */
-        --color-accent: #FF4C4C;      /* Rood - subtitel */
-        --color-brown: #693A1C;       /* Donkerbruin - aap */
-        --color-lightbrown: #F3B773;  /* Lichtbruin - gezicht */
+        --color-primary: #00CFFF;
+        --color-secondary: #FFF379;
+        --color-accent: #FF4C4C;
+        --color-brown: #693A1C;
+        --color-lightbrown: #F3B773;
         --color-white: #FFFFFF;
       }
 
@@ -54,27 +54,29 @@
         transition: background-color 0.3s ease;
       }
       .btn:hover {
-        background-color: #0099cc; /* iets donkerder blauw */
+        background-color: #0099cc;
       }
     </style>
   </head>
 
   <body class="bg-secondary text-brown font-sans">
     <!-- Hero Section -->
-    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
-      <img src="logo.png" alt="Smulaapje logo" class="h-20 mb-4" />
-      <h1 class="text-3xl md:text-5xl font-bold mb-6 text-primary">Samen koken wordt kinderspel</h1>
-      <img
-        src="images/reallife/dad-and-daughter-cooking.jpg"
-        alt="Vader en dochter koken"
-        class="shadow-md w-full max-w-2xl mb-8 rounded"
-      />
-      <a
-        href="mailto:marennehoogenboom@hotmail.com"
-        class="btn"
-      >
-        Ontvang de recepten
-      </a>
+    <section class="min-h-screen flex flex-col md:flex-row items-center justify-center text-center md:text-left px-6 gap-12">
+      <!-- Text Content -->
+      <div class="max-w-xl">
+        <img src="logo.png" alt="Smulaapje logo" class="h-20 mb-4 mx-auto md:mx-0" />
+        <h1 class="text-3xl md:text-5xl font-bold mb-6 text-primary">Samen koken wordt kinderspel</h1>
+        <a href="mailto:marennehoogenboom@hotmail.com" class="btn">Ontvang de recepten</a>
+      </div>
+
+      <!-- Image -->
+      <div class="w-full md:w-[150%] max-w-3xl">
+        <img
+          src="images/reallife/dad-and-daughter-cooking.jpg"
+          alt="Vader en dochter koken"
+          class="shadow-md rounded w-full h-auto"
+        />
+      </div>
     </section>
 
     <!-- Drie Stappen -->
