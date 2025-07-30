@@ -1,18 +1,61 @@
-<!-- Hero Section -->
-<section class="min-h-screen px-6 py-12 bg-secondary text-brown flex flex-col md:flex-row items-center justify-between gap-12">
-  <!-- Linkerkant: tekst -->
-  <div class="flex-1 max-w-xl text-center md:text-left">
-    <img src="logo.png" alt="Smulaapje logo" class="h-20 mb-4 mx-auto md:mx-0" />
-    <h1 class="text-3xl md:text-5xl font-bold mb-6 text-primary">Samen koken wordt kinderspel</h1>
-    <a href="mailto:marennehoogenboom@hotmail.com" class="btn">Ontvang de recepten</a>
-  </div>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smulaapje</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800 font-sans">
 
-  <!-- Rechterkant: afbeelding -->
-  <div class="flex-1 max-w-3xl">
-    <img
-      src="images/reallife/dad-and-daughter-cooking.jpg"
-      alt="Vader en dochter koken"
-      class="w-[100%] max-w-none rounded shadow-md"
-    />
-  </div>
-</section>
+  <!-- Header -->
+  <header class="flex justify-between items-center px-6 py-4 shadow-md">
+    <div class="flex items-center space-x-3">
+      <img src="images/Branding/Logo compleet.png" alt="Logo Smulaapje" class="h-10 w-auto" />
+      <span class="text-xl font-bold">Smulaapje</span>
+    </div>
+    <nav class="space-x-6 text-lg">
+      <a href="#missie" class="hover:text-orange-500">Missie</a>
+      <a href="#over-mij" class="hover:text-orange-500">Over mij</a>
+      <a href="#recepten" class="hover:text-orange-500">Recepten</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-16 bg-orange-100">
+    <div class="lg:w-1/2 mb-10 lg:mb-0">
+      <h1 class="text-4xl lg:text-5xl font-bold mb-6">Samen koken wordt kinderspel</h1>
+      <button class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full text-lg transition">
+        Ontvang de recepten
+      </button>
+    </div>
+    <div class="lg:w-1/2">
+      <img src="images/reallife/dad-and-daughter-cooking.jpg" alt="Vader en kind koken samen" class="rounded-2xl shadow-xl w-full" />
+    </div>
+  </section>
+
+  <!-- 3 stappen -->
+  <section class="py-16 px-6 lg:px-20 bg-white">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+      <!-- Stap 1 -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">1. Kies jouw moment</h2>
+        <p>Op jouw papa- of mama-dag of liever in het weekend, kook samen wanneer het jou uitkomt!</p>
+      </div>
+
+      <!-- Stap 2 -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">2. Kook samen</h2>
+        <p>Duidelijke instructies voor jou als grote chef, en voor je kleine chef. Quality time in de keuken!</p>
+      </div>
+
+      <!-- Stap 3 -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">3. Samen smullen!</h2>
+        <p>Smullen van wat je zelf hebt gemaakt, dat fietst erin! Napraten met smulvragen.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
