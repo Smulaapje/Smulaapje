@@ -2,60 +2,98 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Smulaapje</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smulaapje – Samen koken wordt kinderspel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white text-gray-800 font-sans">
 
-  <!-- Header -->
-  <header class="flex justify-between items-center px-6 py-4 shadow-md">
-    <div class="flex items-center space-x-3">
-      <img src="images/Branding/Logo compleet.png" alt="Logo Smulaapje" class="h-6 w-auto max-w-[120px]" />
-      <span class="text-xl font-bold">Smulaapje</span>
-    </div>
-    <nav class="space-x-6 text-lg">
-      <a href="#missie" class="hover:text-orange-500">Missie</a>
-      <a href="#over-mij" class="hover:text-orange-500">Over mij</a>
-      <a href="#recepten" class="hover:text-orange-500">Recepten</a>
-    </nav>
-  </header>
+  <!-- Header wordt ingeladen via JavaScript -->
+  <div id="header-placeholder"></div>
 
-  <!-- Hero Section -->
-  <section class="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-16 bg-orange-100">
-    <div class="lg:w-1/2 mb-10 lg:mb-0">
-      <h1 class="text-4xl lg:text-5xl font-bold mb-6">Samen koken wordt kinderspel</h1>
-      <button class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full text-lg transition">
-        Ontvang de recepten
-      </button>
+  <!-- Hero section -->
+  <section class="w-full flex flex-col md:flex-row items-center justify-between px-6 py-12">
+    <!-- Text left -->
+    <div class="md:w-1/2 space-y-4">
+      <h1 class="text-3xl md:text-4xl font-bold">Samen koken wordt kinderspel</h1>
+      <p class="text-lg">Van kieskeurige eter naar kleine chef – met een beetje hulp van Smulaapje.</p>
+      <a href="signup.html" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-white font-semibold px-6 py-3 rounded transition">
+        Probeer Smulaapje gratis
+      </a>
     </div>
-    <div class="lg:w-1/2 flex justify-center">
-      <img src="images/reallife/dad-and-daughter-cooking.jpg" alt="Vader en kind koken samen" class="rounded-2xl shadow-xl w-full max-w-[300px]" />
+    <!-- Image right -->
+    <div class="md:w-1/2 mt-8 md:mt-0">
+      <img src="images/reallife/dad-and-daughter-cooking.jpg" alt="Vader en dochter koken samen" class="rounded-xl shadow-lg w-full max-w-md mx-auto">
     </div>
   </section>
 
-  <!-- 3 stappen -->
-  <section class="py-16 px-6 lg:px-20 bg-white">
-    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10 text-center max-w-6xl mx-auto">
-      <!-- Stap 1 -->
-      <div>
-        <h2 class="text-2xl font-semibold mb-4">1. Kies jouw moment</h2>
-        <p>Op jouw papa- of mama-dag of liever in het weekend, kook samen wanneer het jou uitkomt!</p>
+  <!-- Stappenplan -->
+  <section id="hoe-werkt-het" class="bg-yellow-100 py-12 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+      <div class="space-y-4">
+        <div class="text-4xl">👀</div>
+        <h3 class="font-semibold text-lg">1. Kijk</h3>
+        <p class="text-sm text-gray-700">Bekijk samen een leuke en leerzame video met Smulaapje.</p>
       </div>
-
-      <!-- Stap 2 -->
-      <div>
-        <h2 class="text-2xl font-semibold mb-4">2. Kook samen</h2>
-        <p>Duidelijke instructies voor jou als grote chef, en voor je kleine chef. Quality time in de keuken!</p>
+      <div class="space-y-4">
+        <div class="text-4xl">👩‍🍳</div>
+        <h3 class="font-semibold text-lg">2. Kook</h3>
+        <p class="text-sm text-gray-700">Volg het recept stap voor stap – speciaal voor kleine handjes.</p>
       </div>
-
-      <!-- Stap 3 -->
-      <div>
-        <h2 class="text-2xl font-semibold mb-4">3. Samen smullen!</h2>
-        <p>Smullen van wat je zelf hebt gemaakt, dat fietst erin! Napraten met smulvragen.</p>
+      <div class="space-y-4">
+        <div class="text-4xl">😋</div>
+        <h3 class="font-semibold text-lg">3. Smul</h3>
+        <p class="text-sm text-gray-700">Proef, leer, en ontdek samen nieuwe smaken op een leuke manier!</p>
       </div>
     </div>
   </section>
+
+  <!-- Probleem en oplossing -->
+  <section class="w-full flex flex-col md:flex-row items-center justify-between px-6 py-16 space-y-8 md:space-y-0">
+    <div class="md:w-1/2">
+      <img src="images/reallife/dummy-recept.jpg" alt="Voorbeeld recept" class="rounded-xl shadow-md w-full max-w-md mx-auto">
+    </div>
+    <div class="md:w-1/2 md:pl-12 space-y-4">
+      <h2 class="text-2xl font-semibold">Waarom Smulaapje?</h2>
+      <p class="text-gray-700">
+        Veel kinderen zijn kieskeurige eters. Groenten? Bah! Nieuwe smaken? Spannend!
+        Smulaapje maakt koken leuk, leerzaam en laagdrempelig. Samen koken zorgt voor meer vertrouwen aan tafel
+        – en wie zelf kookt, proeft sneller iets nieuws.
+      </p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="bg-yellow-100 py-12 px-6">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <p class="italic text-gray-700">“Smulaapje heeft het avondeten veranderd in een feestje!”</p>
+        <p class="mt-4 text-sm font-semibold">– Sophie, moeder van Bram (4)</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <p class="italic text-gray-700">“Mijn kind eet nu broccoli. Echt waar.”</p>
+        <p class="mt-4 text-sm font-semibold">– Tim, vader van Noor (5)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer wordt ingeladen via JavaScript -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Laad header & footer -->
+  <script>
+    fetch('partials/header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+
+    fetch('partials/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
 
 </body>
 </html>
